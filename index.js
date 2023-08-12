@@ -1,7 +1,8 @@
- import{db,storage} from "./firebase.mjs"
+ import{db,storage, auth} from "./firebase.mjs"
 
-import { collection,  getDocs } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
-import { ref, getDownloadURL  } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-storage.js";
+import { collection,  getDocs  } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+import { ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-storage.js";
+import { onAuthStateChanged , signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 
 
 //////////////////////////////     ////////////////////////////////////////////////////////////////
@@ -10,6 +11,29 @@ import { ref, getDownloadURL  } from "https://www.gstatic.com/firebasejs/10.1.0/
 
 ////////////////////////////  ye code firestore se value la kr dy ga  ///////////////////////////////////
 
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    console.log(user);
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/auth.user
+    const uid = user.uid;
+    let mt = document.getElementById('mt').innerHTML = 
+    ` <button id="login" onclick='sign()'> <a class="l" >SignOut</a></button>`;
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+ 
+function sign(){
+  signOut(auth).then(() => {
+    alert('SignOut successfully')
+  }).catch((error) => {
+    // An error happened.
+  });
+}
+window.sign = sign
 
 
 const querySnapshot = await getDocs(collection(db, "users"));

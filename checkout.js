@@ -70,12 +70,13 @@ if (docSnap.exists()) {
      
 
       let plus = one * price;
-      let tax = plus * .18;
+      let tax = plus * .18
       let total = plus + tax;
+
       
-      let subtotal=document.getElementById("subtotal").innerHTML=plus;
-      let tax1=document.getElementById("tax").innerHTML=tax;
-      let Ordertotal=document.getElementById("Ordertotal").innerHTML=total;
+      let subtotal=document.getElementById("subtotal").innerHTML= Math.round(plus);
+      let tax1=document.getElementById("tax").innerHTML=Math.round(tax);
+      let Ordertotal=document.getElementById("Ordertotal").innerHTML=Math.round(total);
   
 
     }
@@ -93,9 +94,9 @@ if (docSnap.exists()) {
        
 
 
-       let subtotal=document.getElementById("subtotal").innerHTML=plus;
-       let tax1=document.getElementById("tax").innerHTML=tax;
-       let Ordertotal=document.getElementById("Ordertotal").innerHTML=total
+       let subtotal=document.getElementById("subtotal").innerHTML=Math.round(plus);
+       let tax1=document.getElementById("tax").innerHTML=Math.round(tax);
+       let Ordertotal=document.getElementById("Ordertotal").innerHTML=Math.round(total)
 
     //    two.innerHTML = `
     //    <div class="main">

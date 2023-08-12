@@ -20,7 +20,6 @@ document.getElementById("btn").addEventListener('click',()=>{
           text: 'You Login successfully!',
       })
     })
-    se
     .then(()=>{
         setTimeout(() => {
             window.location.href="./index.html"
