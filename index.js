@@ -6,6 +6,7 @@ import { ref, getDownloadURL  } from "https://www.gstatic.com/firebasejs/10.1.0/
 
 //////////////////////////////     ////////////////////////////////////////////////////////////////
 
+// console.log("hello vro kia haal he");
 
 ////////////////////////////  ye code firestore se value la kr dy ga  ///////////////////////////////////
 
@@ -19,6 +20,8 @@ getDownloadURL(ref(storage, doc.id))
   .then((url) => {
       
    let link=url
+   console.log(link);
+
 
 
    document.getElementById("card").innerHTML+=`

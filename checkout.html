@@ -31,7 +31,7 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
+                    <div class="collapse navbar-collapse hee" id="navbarScroll">
                         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll m-3"
                             style="--bs-scroll-height: 100px;">
                             <li class="nav-item one">
@@ -56,25 +56,65 @@
     </div>
 
 
-    <div class="container ga">
+    <div class="container  ga">
         <div class="row">
-            <div class="col-7">
-               
-                    <h2 class="shoping">Shopping Cart</h2>
-                <div class="my">
-                    <img class="m"
-                        src="https://next-shop-gilt.vercel.app/_next/image?url=https%3A%2F%2Fnextzone.vercel.app%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fi.postimg.cc%252F8PsKVjKm%252Fcontrast1.jpg%26w%3D640%26q%3D75&w=1920&q=75 ">
+            <div class="col-12 col-md-12 col-sm-12 col-xl-7 " id="one">
+
+                <h2 class="shoping">Shopping Cart</h2>
+                <!-- <hr> -->
+                <div class="d-flex sp">
+                    
+                    <div class="my">
+                        <img class="m" id="image"
+                            src="">
+
+                    </div>
+                    <div class="set">
+                        <h6 class="hod" id="naam"></h6>
+                        <p class="qq">Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui
+                            finibus malesuada et at nulla...</p>
+                            <!-- <input id="inp" type="number" onclick="select()"> -->
+                            <select name="select" id="select" onclick='select()'>
+                                //     <option value="1">1</option>
+                                //     <option value="2">2</option>
+                                //     <option value="3">3</option>
+                                //     <option value="4">4</option>
+                                //     <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                       <option value="9">9</option>
+                                       <option value="10">10</option>
+                                       <option value="11">11</option>
+                                // </select>
+                    </div>
+
+                </div>
+                  
+            </div>
+            <div class="col-12 col-md-12 col-sm-12 col-xl-5" id="two">
+                <div class="main">
+                    <h4 class="sum">Order summary</h4>
+                    <div class="sub"><p class="subtotal">Subtotal</p><p id="subtotal">₹ 0</p></div>
+                    <div class="ta"><p class="taxt">Tax(18%) </p><p id="tax">₹ 0</p></div>
+                    <div class="or"><h5 class="total">Order total</h5><p id="Ordertotal">₹ 0</p></div>
+                    <button id="checkout" onclick="check()" >Checkout</button>
                 </div>
             </div>
-            <div class="col-5"></div>
         </div>
     </div>
 
+   
 
     <div class="last">
         <h5 class="end">© 2023 NextShop. All rights reserved.</h5>
     </div>
 
+
+    <script type="module" src="./checkout.js"></script>
 </body>
 
 </html>
+
+
+

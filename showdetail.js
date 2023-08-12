@@ -1,10 +1,9 @@
 import{db,storage} from "./firebase.mjs"
 
-import { collection,  getDocs,doc, getDoc} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
+import { collection,doc, getDoc} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 import { ref, getDownloadURL  } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-storage.js";
 
 let id =(localStorage.getItem('id'));
-
 
 
 // const querySnapshot = await getDocs(collection(db, "users"));
@@ -19,7 +18,7 @@ if (docSnap.exists()) {
 
   console.log("Document data:", docSnap.data());
 
-   
+     
   console.log(doc);
  
   getDownloadURL(ref(storage, id))

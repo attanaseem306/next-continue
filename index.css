@@ -1,6 +1,7 @@
 form .form-control:focus{
     box-shadow: none;
  }
+ 
 .fa-star{
     color: rgb(66, 194, 233);
     font-size: 16px;
@@ -246,6 +247,17 @@ form  i{
   .container .row .fourthimg:hover{
      filter: contrast(0.5);
   }
+
+
+  /* @media only screen and (max-width: 991px) and (min-width: 250px)  {
+
+    .hee{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+     } */
  
  /*  <!-- category end --> */
  
