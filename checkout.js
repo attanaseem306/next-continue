@@ -2,11 +2,42 @@ import { db, storage,auth} from "./firebase.mjs"
 
 import { collection, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js";
 import { ref, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-storage.js";
-import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+import { onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
 
 console.log('fhdgfhsgfsdh');
 
 let id = (localStorage.getItem('id'));
+
+
+
+
+
+
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    console.log(user);
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/auth.user
+    const uid = user.uid;
+    let mt = document.getElementById('mt').innerHTML = 
+    ` <button id="login" onclick='sign()'> <a class="l" >SignOut</a></button>`;
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+ 
+function sign(){
+  signOut(auth).then(() => {
+    alert('SignOut successfully')
+  }).catch((error) => {
+    // An error happened.
+  });
+}
+window.sign = sign
+
 
 
 
@@ -34,34 +65,9 @@ if (docSnap.exists()) {
       let naam = document.getElementById("naam").innerHTML = docSnap.data().Name;
       let picture = document.getElementById("image").src = link;
       let price = docSnap.data().Price;
-      // console.log(price);
-      // let one = document.getElementById('one');
-      // let two = document.getElementById('two');
-      // console.log(one , two);
+      localStorage.setItem("price",price)
+      localStorage.setItem("tasver",picture)
 
-    //   one.innerHTML = `
-    //  <h2 class="shoping">Shopping Cart</h2>
-    //  <div class="d-flex">
-    //      <div class="my">
-    //          <img class="m" id="image"
-    //              src="">
-
-    //      </div>
-    //      <div class="set">
-    //          <h6 class="hod" id="naam"></h6>
-    //          <p class="qq">Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui
-    //              finibus malesuada et at nulla...</p>
-    //              <select name="select" id="select" onclick='select()'>
-    //     <option value="1">1</option>
-    //     <option value="2">2</option>
-    //     <option value="3">3</option>
-    //     <option value="4">4</option>
-    //     <option value="5">5</option>
-    // </select>
-    //      </div>
-
-    //  </div>`
-     
 
     function select1(){
 
@@ -74,9 +80,9 @@ if (docSnap.exists()) {
       let total = plus + tax;
 
       
-      let subtotal=document.getElementById("subtotal").innerHTML= Math.round(plus);
-      let tax1=document.getElementById("tax").innerHTML=Math.round(tax);
-      let Ordertotal=document.getElementById("Ordertotal").innerHTML=Math.round(total);
+      let subtotal=document.getElementById("subtotal").innerHTML=`₹`+ Math.round(plus);
+      let tax1=document.getElementById("tax").innerHTML=`₹` + Math.round(tax);
+      let Ordertotal=document.getElementById("Ordertotal").innerHTML=`₹` + Math.round(total);
   
 
     }
@@ -87,16 +93,20 @@ if (docSnap.exists()) {
 
      function select(){
        let select = document.getElementById('select');
-       console.log(select);
+       localStorage.setItem("value",select);
        let plus = select.value * price;
+       localStorage.setItem('pl',plus)
        let tax = plus * .18;
+       localStorage.setItem('ta',tax)
        let total = plus + tax;
+       localStorage.setItem('to',total)
+
        
 
 
-       let subtotal=document.getElementById("subtotal").innerHTML=Math.round(plus);
-       let tax1=document.getElementById("tax").innerHTML=Math.round(tax);
-       let Ordertotal=document.getElementById("Ordertotal").innerHTML=Math.round(total)
+       let subtotal=document.getElementById("subtotal").innerHTML=`₹`+ Math.round(plus);
+       let tax1=document.getElementById("tax").innerHTML=`₹` + Math.round(tax);
+       let Ordertotal=document.getElementById("Ordertotal").innerHTML=`₹` + Math.round(total)
 
     //    two.innerHTML = `
     //    <div class="main">
@@ -127,6 +137,7 @@ if (docSnap.exists()) {
             console.log("Hello");
             const uid = user.uid;
             console.log(uid);
+            window.location.href="./nextcheckout.html"
 
             // ...
           } else {

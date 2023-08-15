@@ -14,9 +14,9 @@ form .form-control:focus{
     font-weight: 600;
     padding: 10px;
 }
-/* .sp{
-    justify-content: space-between;
-} */
+.sp{
+margin-top: 60px;
+}
 #select{
     width: 58px;
     height: 25px;
@@ -49,9 +49,14 @@ form .form-control:focus{
     margin-top: 70px;
 }
 .set{
-    width: 490px;
-    margin-top: 65px;
-margin-right: 100px;}
+  padding: 20px; 
+  height: 160px;
+  margin-top: 8px;
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px;  
+ 
+
+}
 .end{
     color: white;
     margin-left: 16px;
@@ -136,12 +141,19 @@ margin-top: 20px;}
 
 }
 .my{
+
+
+    width: 150px;
+        height: 170px;
+        /* overflow: hidden; */
+        /* border-radius: 10px 10px 10px 10px; */
+        align-items: center;
     /* background-color: black; */
-    width: 300px;
+    /* width: 300px;
     height: 230px;
     overflow: hidden;
     border-radius: 10px 0px 0px 10px;
-    align-items: center;
+    align-items: center; */
    
 }
 .ga{
@@ -162,9 +174,18 @@ margin-top: 20px;}
     text-align: center;
 }
 .m{
-    width: 180px;
+    width: 150px;
+        height: 160px;
+        margin-top: 8px; 
+        border-top-left-radius: 10px; 
+        border-bottom-left-radius: 10px; 
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 10px; 
+
+
+        /* width: 180px;
     margin-top: 65px;
-    border-radius: 10px;
+    border-radius: 10px; */
    }
 .n{
   width: 40px;
@@ -213,13 +234,13 @@ form  i{
 
  }
 
- @media only screen and (max-width: 767px) and (min-width: 250px)  {
+ /* @media only screen and (max-width: 767px) and (min-width: 250px)  {
     .set{
         margin-left: 50px;    
     align-items: center;
     text-align: center;
     }
- }
+ } */
 
 
  /* @media only screen and (max-width: 991px) and (min-width: 250px)  {

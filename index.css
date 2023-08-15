@@ -33,6 +33,15 @@ form .form-control:focus{
     outline: none;
     margin-top: 30px;
 }
+
+
+.card:hover{
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    filter: contrast(0.8);
+    cursor: pointer;
+}
 #card{
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +110,8 @@ form  i{
      flex-direction: row;
      justify-content: center;
      align-items: center;
-     height: 90vh;
+     /* height: 100vh; */
+     /* background-color: aqua; */
  }
  .phela .col-lg-6{
      display: flex;
@@ -248,6 +258,42 @@ form  i{
      filter: contrast(0.5);
   }
 
+
+.rose{
+   
+    padding-bottom: 14px;
+}
+
+.samny{
+    display: flex;
+}
+ .one1{
+    width: 160px;
+    height: 200px;
+        border-radius: 10px;
+ }
+ 
+ .one2{
+    width: 160px;
+    height: 200px;
+        border-radius: 10px;
+     margin-left: 25px;
+    margin-top: 10px; 
+ }
+ 
+ .one3{
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+ }
+ 
+ .one4{
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 10px; 
+ }
 
   /* @media only screen and (max-width: 991px) and (min-width: 250px)  {
 
