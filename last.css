@@ -130,6 +130,7 @@ form  i{
     font-weight: 600;
     font-size: 14px;
     color: rgb(128, 128, 128);
+    /* margin-bottom: 10px; */
 }
 
 
@@ -272,3 +273,22 @@ form  i{
   }
 
  }  
+
+
+ @media only screen and (max-width: 370px) and (min-width: 360px)  {
+
+ #shiping,#na,#st,#ci,#sta,#zi{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 14px;
+}
+
+.pa{
+    height: 350px;
+}
+/* .detail{
+    margin-bottom: 35px;
+} */
+
+ }

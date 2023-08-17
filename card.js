@@ -51,7 +51,7 @@ document.getElementById("Post").addEventListener('click', async () => {
             text: 'Card Post successfully!',
         })
             .then(() => {
-                window.location.href="./home.html"
+                window.location.href="./index.html"
             })
     })
 

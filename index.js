@@ -17,6 +17,8 @@ onAuthStateChanged(auth, (user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/auth.user
     const uid = user.uid;
+    // const NA=user.name;
+    // console.log(NA);
     let mt = document.getElementById('mt').innerHTML = 
     ` <button id="login" onclick='sign()'> <a class="l" >SignOut</a></button>`;
     // ...
@@ -28,8 +30,9 @@ onAuthStateChanged(auth, (user) => {
  
 function sign(){
   signOut(auth).then(() => {
-    alert('SignOut successfully')
-  }).catch((error) => {
+     alert("Sign Out successfully")
+  })
+ .catch((error) => {
     // An error happened.
   });
 }
@@ -44,7 +47,7 @@ getDownloadURL(ref(storage, doc.id))
   .then((url) => {
       
    let link=url
-   console.log(link);
+  //  console.log(link);
 
 
 

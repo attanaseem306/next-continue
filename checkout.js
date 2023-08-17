@@ -91,7 +91,7 @@ if (docSnap.exists()) {
     
     window.select1=select1
 
-     function select(){
+     function select2(){
        let select = document.getElementById('select');
        localStorage.setItem("value",select);
        let plus = select.value * price;
@@ -119,7 +119,7 @@ if (docSnap.exists()) {
      
     }
 
-    window.select = select
+    window.select2 = select2
 
     })
 

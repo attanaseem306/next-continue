@@ -77,7 +77,7 @@ form  i{
     color: gray;
 }
 .one{
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
 }
 
@@ -91,6 +91,21 @@ form  i{
 width: 530px;
 }
 
-.second{
+/* .second{
     width: 590px;
-}
+} */
+
+
+@media only screen and (max-width: 540px) and (min-width: 250px)  {
+   #picture{
+    width: 400px;
+    align-items: center;
+   }
+  } 
+
+  @media only screen and (max-width: 540px) and (min-width: 455px)  {
+    #picture{
+     width: 400px; 
+     margin-left: 40px;
+    }
+   } 
