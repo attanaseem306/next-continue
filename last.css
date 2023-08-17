@@ -1,0 +1,294 @@
+
+
+
+form .form-control:focus{
+    box-shadow: none;
+ }
+ 
+.fa-star{
+    color: rgb(66, 194, 233);
+    font-size: 16px;
+    margin-left: 4px;
+}
+#bb{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    padding: 10px;
+}
+.na{
+    color: gray;
+}
+.last{
+    padding: 19px;
+    background-color: rgb(64, 64, 64);
+    margin-top: 70px;
+}
+.end{
+    color: white;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+.card{
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+#card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+.n{
+  width: 40px;
+} 
+form  i{
+     margin-top: 10px;
+     margin: 10px;
+     font-size: 22px;
+ }
+ form button{
+     border: 0;
+     outline: 0;
+     border-radius: 10px;
+ }
+ .container h2{
+    font-size: 32px;
+    font-weight: bold;
+ }
+ .container a{
+     font-size: 15px;
+     font-weight: bold;
+ }
+ 
+ .container .one{
+     background-color:black;
+     padding: 6px;
+     border-radius: 8px;
+ }
+ .container .two{
+     padding: 6px;
+     border-radius: 8px;
+ }
+
+ #login{
+    height: 35px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    width: 70px;
+    
+ }
+
+ .l{
+    text-decoration: none;
+    color: rgb(7, 6, 6);
+    font-size: 22px;
+
+ }
+ .fl{
+    display: flex;
+    justify-content: space-between;
+ }
+ .shi{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(77, 76, 76);
+        font-weight: 700;
+    font-size: 19px;
+    margin-top: 7px;
+ }
+ .del{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(77, 76, 76);
+    font-weight: 700;
+    font-size: 19px;
+    margin-top: 7px;
+ }
+ .pa{
+    padding: 20px;
+    height: 315px;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 250);
+   align-items: center;
+    text-align: center;
+ }
+.detail{
+   display: flex;
+   flex-direction: column;
+  
+}
+
+/* .shipping{
+    margin-right: 150px;
+} */
+#shiping,#na,#st,#ci,#sta,#zi{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+    /* margin-bottom: 10px; */
+}
+
+
+
+
+
+
+
+
+
+.main{
+    /* width: 400px; */
+    margin-top: 16px;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(247, 247, 250);
+    border-bottom-right-radius: 10px;   
+    border-bottom-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px; 
+    /* margin-left: 20px; */
+
+}
+
+.subtotal{
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#subtotal,#tax,#Ordertotal{
+    font-weight: 700;
+    color: rgb(54, 53, 53);
+    }
+
+    .sub,.ta,.or{
+        display: flex;
+         justify-content: space-between;
+         margin-top: 30px;
+    }
+
+    .taxt{
+        color: gray;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .total{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #out{
+        width: 100%;
+        margin-top: 25px;
+        background-color: rgb(83, 83, 231);
+        color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    }
+
+
+    .my{
+        /* background-color: black; */
+        width: 150px;
+        height: 170px;
+        /* overflow: hidden; */
+        border-radius: 10px 10px 10px 10px;
+        align-items: center;
+        /* background-color: blue; */
+       
+    }
+
+    .m{
+        width: 150px;
+        height: 160px;
+        margin-top: 8px; 
+        border-radius: 10px;
+    }
+       .done{
+        display: flex;
+        border-radius: 10px;
+
+       }
+       .done2{
+        margin-left: 20px;
+        margin-top: 10px;
+       }
+       .chota{
+        font-size: 13px;
+        color: gray;
+       }
+       #pesa{
+        margin-left: 3px;
+        color: gray;
+        font-weight: 600;
+       }
+       #quan{
+        color: gray;
+        font-weight: 600;
+
+       }
+       .x{
+        margin-top: 20px;
+       }
+
+       .vl {
+        border-left: 2px solid rgb(106, 106, 106);
+        height: 22px;
+        margin-top: 3px;
+        margin-left: 4px;
+      }
+      .item{
+        background-color: rgb(247, 247, 250);
+      }
+
+
+
+
+      
+  @media only screen and (max-width: 403px) and (min-width: 250px)  {
+  
+#quan{
+    font-size: 11px;
+}
+#pesa{
+    font-size: 11px;
+}
+
+.vl {
+    border-left: 2px solid rgb(137, 137, 137);
+    height: 12px;
+    /* margin-top: 6px; */
+    margin-left: 4px;
+  }
+
+ }  
+
+
+ @media only screen and (max-width: 370px) and (min-width: 360px)  {
+
+ #shiping,#na,#st,#ci,#sta,#zi{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 14px;
+}
+
+.pa{
+    height: 350px;
+}
+/* .detail{
+    margin-bottom: 35px;
+} */
+
+ }
